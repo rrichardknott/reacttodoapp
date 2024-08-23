@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: #987eff;
+}
+
+.todo-container {
+  border: 10px solid #ffffff;
+  width: 50%;
+  min-width: 260px;
+  border-radius: 25px;
+  padding: 25px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.todoInputButtonContainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todoInput {
+  width: 300px;
+  padding: 10px;
+  font-size: 1.6rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.todoAdd {
+  width: 100px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+li {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.list-button-container {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+}
+
+.listDeleteButton {
+  cursor: pointer;
+}
+
+.deleteStrikeContainer {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.clearAll {
+  margin-top: 25px;
+  font-size: 1.6rem;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Sweet Alert */
+div:where(.swal2-icon).swal2-warning {
+  border-color: #f92f60;
+  color: #f92f60;
+}
+
+@media screen and (max-width: 895px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .todoInputButtonContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list-button-container {
+    justify-content: space-evenly;
+  }
+
+  .todoAdd {
+    font-size: 1.2rem;
+    padding: 7px 12px;
+    margin-top: 10px;
+  }
+
+  .todoInput {
+    padding: 7px;
+    font-size: 1.2rem;
+    width: 250px;
+  }
+
+  li {
+    font-size: 1.2rem;
+  }
+
+  .clearAll {
+    font-size: 1.2rem;
+
+    padding: 7px 12px;
+  }
+}
